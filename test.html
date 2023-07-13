@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naujas Projektas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container header-container">
+        <div>
+            <h1>Naujas Projektas</h1>
+        </div>
+        <div class="separator"></div>
+    </div>
+    
+    <div class="container">
+        <div class="text-box">Ugdymo lygis</div>
+        <div class="button-container">
+            <button class="button button-toggle">7 Klasė</button>
+            <button class="button button-toggle">8 Klasė</button>
+            <button class="button button-toggle">9 Klasė</button>
+            <button class="button button-toggle">10 Klasė</button>
+            <button class="button button-toggle">11 Klasė</button>
+            <button class="button button-toggle">12 Klasė</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="text-box">Integruojami dalykai</div>
+        <div class="button-container">
+            <button class="button button-toggle">Lietuvių k. ir literatūra</button>
+            <button class="button button-toggle">Biologija</button>
+            <button class="button button-toggle">Chemija</button>
+            <button class="button button-toggle">Matematika</button>
+            <button class="button button-toggle">Informatika</button>
+            <button class="button button-toggle">Anglų k.</button>
+            <button class="button button-toggle">Vokiečių k.</button>
+            <button class="button button-toggle">Fizika</button>
+            <button class="button button-toggle">Geografija</button>
+            <button class="button button-toggle">Ekonomika</button>
+            <button class="button button-toggle">Istorija</button>
+            <button class="button button-toggle">Fizinis ugdymas</button>
+            <button class="button button-toggle">Muzika</button>
+            <button class="button button-toggle">Dailė</button>
+            <input type="text" class="text-input" oninput="handleInputChange(event)" placeholder="Kita: Įrašyti">
+        </div>
+    </div>
+
+    <div class="container right-container">
+        <button class="button button-a" onclick="saveToggledButtons()">Generuoti projekto aprašą</button>
+        <button class="button button-b" onclick="resetButtonsAndInput()">Išvalyti pasirinkimus</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
